@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+float penjumlahan(float a,float b)
+{
+	return(a+b);
+}
+float pengurangan(float a,float b)
+{
+	return(a-b);
+}
+float perkalian(float a,float b)
+{
+	return(a*b);
+}
+float pembagian(float a,float b)
+{
+	return(a/b);
+}
+int main()
+{
+	float menu,b,c;
+	cout<<"PROGRAM KALKULATOR"<<endl;
+	cout<<"MENU OPERASI :"<<endl;
+	cout<<"1.PENAMBAHAN"<<endl;
+	cout<<"2.PENGURANGAN"<<endl;
+	cout<<"3.PERKALIAN"<<endl;
+	cout<<"4.PEMBAGIAN"<<endl;
+	cout<<"Pilih Menu NO : ";cin>>menu;
+
+	if(menu==1)
+	{
+		cout<<"Bilangan Pertama : ";cin>>b;
+		cout<<"Bilangan Kedua   : ";cin>>c;
+		cout<<"Hasil "<<b<<" + "<<c<<" = "<<penjumlahan(b,c);
+	}
+	else if(menu==2)
+	{
+		cout<<"Bilangan Pertama : ";cin>>b;
+		cout<<"Bilangan Kedua   : ";cin>>c;
+		cout<<"Hasil "<<b<<" - "<<c<<" = "<<pengurangan(b,c);
+	}
